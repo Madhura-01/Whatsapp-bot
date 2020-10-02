@@ -25,14 +25,14 @@ auth_token = os.getenv('auth_token')
 client = Client(account_sid, auth_token)
 
 from_whastapp_number = 'whatsapp:+14155238886'
-to_whastapp_number = 'whatsapp:+919325583070'
+to_whastapp_number = 'whatsapp:+91xxxxxxxxxx'
 
 message = client.messages \
     .create(
          media_url=['https://i.pinimg.com/originals/98/26/86/982686f070e5c77b64a71f83a96b7167.jpg'],
          from_='whatsapp:+14155238886',
          body="Light ON!!",
-         to='whatsapp:+919325583070'
+         to='whatsapp:+91xxxxxxxxxx'
      )
 print(message.sid)
 message = client.messages \
@@ -40,7 +40,7 @@ message = client.messages \
          media_url=['http://i.xp.io/2L3jia5T.png'],
          from_='whatsapp:+14155238886',
          body="Light OFF!!",
-         to='whatsapp:+919325583070'
+         to='whatsapp:+91xxxxxxxxxx'
      )
 print(message.sid)
   
